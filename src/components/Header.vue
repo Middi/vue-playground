@@ -1,7 +1,7 @@
 <template>
   <div class="container-nav pad">
     <div id="logo" class="brand-header menuUp">
-      <p>Something</p>
+      <h4>Vue Playground</h4>
     </div>
 
     <div @click="menuToggle" v-bind:class="{ open: menuOpen }" id="nav-toggle">
