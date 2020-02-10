@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
+    <vue-page-transition name="overlay-down-full">
     <router-view />
+    </vue-page-transition>
   </div>
 </template>
 

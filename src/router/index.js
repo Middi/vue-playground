@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Todo from '../views/Todo.vue'
+import Todo from '../views/Todo'
+import VuePageTransition from 'vue-page-transition'
 
 Vue.use(VueRouter)
+
+Vue.use(VuePageTransition)
 
 const routes = [
   {

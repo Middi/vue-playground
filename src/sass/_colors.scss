@@ -16,3 +16,6 @@ $border: rgba(205, 205, 205, 1);
 $footer: lighten($yellow, 6);
 $alert: rgb(232, 139, 139);
 
+.overlay-left,  .overlay-right,  .overlay-top,  .overlay-bottom   {
+    background: $pink !important;
+}
