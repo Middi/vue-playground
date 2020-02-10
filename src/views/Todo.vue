@@ -15,18 +15,21 @@ export default {
         }
     },
     props: ['id'],
+    watch: {
+        '$route.params.id': {
+            handler: 'callApi',
+            immediate: true
+        }
+    },
     methods: {
-        callApi(id) {
-        fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        callApi() {
+        fetch(`https://jsonplaceholder.typicode.com/todos/${this.id}`)
             .then(res => res.json())
             .then(res => this.todo = res)
             .catch(function(err) {
                 console.log(err);
             });
         }
-    },
-    created() {
-        this.callApi(this.id);
-  }
+    }
 }
 </script>
